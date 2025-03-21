@@ -2,13 +2,107 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: "customFont";
+}
+
+html {
+   font-size: 62.5%;
+}
+
+@font-face {
+   font-family: "customFont";
+   src: url('./src/asset/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
 }
 
 body {
    min-height: 100vh;
+   font-family: "customFont";
    background: 
-   url('./public/assets/images/pattern-lines.svg') no-repeat center center/cover,
-   url("./public/assets/images/background-desktop.png") no-repeat center;
-   background-size: 100%;
+   url('./src/asset/images/pattern-lines.svg') no-repeat center center/100%,
+   url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
+   url('./src/asset/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
+   url('./src/asset/images/background-desktop.png') no-repeat center/100%;
    position: relative;
+}
+
+.main-container {
+   padding: 2rem;
+}
+
+header {
+   color: #fff;
+   font-family: "customFont";
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+
+header img {
+   width: 1.8rem;
+   height: auto;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form-container {
+   text-align: center;
+   color: #fff;
+   width: min(80%, 60rem);
+   margin-top: 4rem;
+   font-size: 1.6rem;
+}
+
+.form-container form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form-container h1 {
+   font-size: 3.5rem;
+   font-weight: bold;
+}
+
+.form-container p {
+   font-weight: 300;
+   margin: 2rem;
+}
+
+.form-input-container {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   width: 30rem;
+}
+
+.input {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   gap: .5rem;
+   font-family: "customFont";
+}
+
+.input input {
+   width: 100%;
+   padding: .75rem;
+   border-radius: .75rem;
+   border: 1px solid rgba(114, 113, 141, 0.8);
+   outline: none;
+   background-color: rgba(26, 24, 63, .8);
+   color: #fff;
+}
+
+.input input:active {
+   border: 1px solid rgba(114, 113, 141, 0.8);
+   outline: none;
 }
