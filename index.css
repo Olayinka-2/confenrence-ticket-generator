@@ -90,19 +90,44 @@ main {
    width: 100%;
    gap: .5rem;
    font-family: "customFont";
+   position: relative;
 }
 
-.input input {
+.input input, .submitBtn, .removeBtn {
    width: 100%;
-   padding: .75rem;
+   padding: .8rem;
    border-radius: .75rem;
-   border: 1px solid rgba(114, 113, 141, 0.8);
+   border: 1px solid #72718dcc;
    outline: none;
    background-color: rgba(26, 24, 63, .8);
    color: #fff;
 }
 
 .input input:active {
-   border: 1px solid rgba(114, 113, 141, 0.8);
+   border: #72718dcc;
    outline: none;
+}
+
+.submitBtn {
+   background-color: #F67464;
+   color: #06011F;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/* .file-field{
+   width: 100%;
+   height: 10rem;
+   background-color: #1a183fcc;
+   border-radius: .5rem;
+   border: 1px dashed #72718dcc;
+   display: flex;
+   justify-content: center;
+} */
+
+.input:first-of-type {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }

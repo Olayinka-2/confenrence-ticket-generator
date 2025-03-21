@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import FileUpload from './component/Avatar';
 
 function App() {
   return (
@@ -17,16 +18,25 @@ function App() {
                 <p>Secure your spot at next&apos;s year biggest coding conference.</p>
                 <div className="form-input-container">
                   <div className="input">
+                    <label htmlFor="Avatar">Upload Avatar</label>
+                    <FileUpload />
+                  </div>
+                  <div className="input">
                     <label htmlFor="fullName">Full Name </label>
-                    <input type="text" name='fullName' id='fullName'/>
+                    <input type="text" name='fullName' id='fullName' required />
                   </div>
                   <div className="input">
                     <label htmlFor="email">Email Address </label>
-                    <input type="text" name='email' id='email'/>
+                    <input type="text" name='email' id='email' placeholder='example@gmail.com' required/>
                   </div>
                   <div className="input">
                     <label htmlFor="github'">GitHub Username </label>
-                    <input type="text" name='github' id='github'/>
+                    <input type="text" name='github' id='github' placeholder='@username' required/>
+                  </div>
+                  <div>
+                    <button className="submitBtn">
+                        Submit form
+                    </button>
                   </div>
                 </div>
               </form>
