@@ -93,6 +93,10 @@ main {
    position: relative;
 }
 
+.input:first-of-type {
+   align-items: center;
+}
+
 .input input, .submitBtn, .removeBtn {
    width: 100%;
    padding: .8rem;
