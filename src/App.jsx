@@ -20,6 +20,10 @@ function App() {
                   <div className="input">
                     <label htmlFor="Avatar">Upload Avatar</label>
                     <FileUpload />
+                    <div className='info-paragraph'>
+                    <svg width="135px" height="135px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="0.672"></circle> <path d="M12 17V11" stroke="#ffffff" stroke-width="0.672" stroke-linecap="round"></path> <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 11 9)" fill="#ffffff"></circle> </g></svg>
+                      <div>Upload your photo (JPG or PNG, max-width: 200mb)</div>
+                      </div>
                   </div>
                   <div className="input">
                     <label htmlFor="fullName">Full Name </label>

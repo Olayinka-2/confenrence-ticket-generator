@@ -88,7 +88,7 @@ main {
    flex-direction: column;
    align-items: flex-start;
    width: 100%;
-   gap: .5rem;
+   gap: 1rem;
    font-family: "customFont";
    position: relative;
 }
@@ -116,18 +116,17 @@ main {
    cursor: pointer;
 }
 
-/* .file-field{
-   width: 100%;
-   height: 10rem;
-   background-color: #1a183fcc;
-   border-radius: .5rem;
-   border: 1px dashed #72718dcc;
+.input .info-paragraph {
+   font-size: 1rem;
+   align-items: flex-start;
    display: flex;
-   justify-content: center;
-} */
-
-.input:first-of-type {
-   display: flex;
-   flex-direction: column;
+   justify-content: flex-start;
    align-items: center;
+   gap: 1rem;
+}
+
+
+.info-paragraph svg {
+   width: 2rem;
+   height: auto;
 }
