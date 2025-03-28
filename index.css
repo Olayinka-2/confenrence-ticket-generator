@@ -6,7 +6,7 @@
 }
 
 html {
-   font-size: 62.5%;
+   font-size: clamp(30%, 62.5%, 80%);
 }
 
 @font-face {
@@ -23,10 +23,12 @@ body {
    url('./src/asset/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
    url('./src/asset/images/background-desktop.png') no-repeat center/100%;
    position: relative;
+   min-height: 100vh;
 }
 
 .main-container {
    padding: 2rem;
+   height: 100vh;
 }
 
 header {
@@ -46,95 +48,7 @@ header img {
    height: auto;
 }
 
-main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.form-container {
-   text-align: center;
-   color: #fff;
-   width: min(80%, 60rem);
-   margin-top: 4rem;
-   font-size: 1.6rem;
-}
-
-.form-container form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.form-container h1 {
-   font-size: 3.5rem;
-   font-weight: bold;
-}
-
-.form-container p {
-   font-weight: 300;
-   margin: 2rem;
-}
-
-.form-input-container {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   width: 30rem;
-}
-
-.input {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 100%;
-   gap: 1rem;
-   font-family: "customFont";
-   position: relative;
-}
-
-.input:first-of-type {
-   align-items: center;
-}
-
-.input input, .submitBtn, .removeBtn {
-   width: 100%;
-   padding: .8rem;
-   border-radius: .75rem;
-   border: 1px solid #72718dcc;
-   outline: none;
-   background-color: rgba(26, 24, 63, .8);
-   color: #fff;
-}
-
-.input input:active {
-   border: #72718dcc;
-   outline: none;
-}
-
-.submitBtn {
-   background-color: #F67464;
-   color: #06011F;
-   border: none;
-   font-weight: bold;
-   cursor: pointer;
-}
-
-.input .info-paragraph {
-   font-size: 1rem;
-   align-self: flex-start;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   gap: 1rem;
-}
-
-.info-paragraph svg {
-   width: 2rem;
-   height: auto;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
    body {
       background: 
       url('./src/asset/images/pattern-lines.svg') no-repeat center center/100%,
