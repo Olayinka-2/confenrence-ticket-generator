@@ -39,7 +39,8 @@
 
 .profile-container {
    position: relative;
-   width: min(600px, 90%);
+   width: min(600px, 95%);
+   margin-top: 5rem;
 }
 
 .background {
@@ -55,24 +56,17 @@
    display: flex;
    flex-direction: column;
    gap: 4rem;
-   align-items: center;
    justify-content: center;
+   width: 70%;
 }
 
-.address-container:last-of-type {
+.address-container {
    display: flex;
-   gap: 3rem;
-}
-
-.address {
-   display: flex;
-   font-size: 3.6rem;
-   align-items: center;
    gap: 2rem;
 }
 
 .img {
-   max-width: 3rem;
+   width: 3rem;
    height: 3rem;
 }
 
@@ -81,16 +75,44 @@
    height: 6rem;
 }
 
-.profile-address-container {
-   bottom: 2rem;
+.firstPara {
+   font-size: 3rem;
 }
 
-.address-container:first-of-type div:last-child {
-   justify-content: flex-end;
-   margin-left: 5.5rem;
-   margin-top: 1rem;
+.addressText {
+   font-size: 1.6rem;
+   margin-bottom: .5rem;
 }
 
-.address-container .addressText {
-   font-size: 1.8rem;
+
+.address-container-last {
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+   .main-profile {
+      gap: 2rem;
+      top: 0;
+   }
+
+   .firstPara {
+      font-size: 1.8rem;
+   }
+
+   .addressText {
+      font-size: 1.3rem;
+   }
+
+   .profile-image {
+      width: 4rem;
+      height: 4rem;
+   }
+
+   .address-container-last {
+      gap: 1.5rem;
+   }
+   
 }
