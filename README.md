@@ -1,13 +1,41 @@
-# React + Vite
+React Form Validation with Email Verification
+Overview
+This project demonstrates a robust form validation implementation in React, featuring:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Client-side validation with proper error handling
 
-Currently, two official plugins are available:
+Email verification with regex pattern matching
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dynamic error messages
 
-## Expanding the ESLint configuration
+Form submission control
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Accessible form inputs
 
+Key Features
+1. Comprehensive Form Validation
+Real-time validation feedback
+
+Required field checking
+
+Email format verification using regex
+
+Error state management
+
+2. User Experience Enhancements
+Field "touched" state tracking
+
+Context-aware error messages
+
+Proper focus management
+
+Clear visual feedback
+
+3. Technical Implementation
+React state management for form state
+
+Custom validation hooks
+
+Event handling for input changes
+
+Form submission control
