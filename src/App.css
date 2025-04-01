@@ -107,3 +107,9 @@ main {
    width: 2rem;
    height: auto;
 }
+
+.para-text {
+   font-size: .9rem;
+   color: #F47060;
+
+}

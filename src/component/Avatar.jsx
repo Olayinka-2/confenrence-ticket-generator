@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default function FileUpload() {
+export default function FileUpload({handleInvalid}) {
    const [image, setImage] = useState(null);
 
    useEffect(() => {
@@ -39,6 +39,7 @@ export default function FileUpload() {
    const handleDragOver = (event) => {
       event.preventDefault();
    }
+
    return (
       <div  style={{
          width: image ? '10rem' : '100%',
@@ -68,10 +69,13 @@ export default function FileUpload() {
          </div>
          <input type="file"
             id="fileInput"
+            name="avatar"
             accept="image/*"
             style={{display:'none'
             }}
-            onChange={handleFileSelect}/>
+            onChange={handleFileSelect}
+            onInvalid={handleInvalid}
+            required/>
 
          {
             image && (
