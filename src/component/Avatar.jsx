@@ -19,6 +19,7 @@ export default function FileUpload() {
    }, []);
 
    const handleFileSelect = (event) => {
+
       const file = event.target.files[0];
       if(file) {
          const imageUrl = URL.createObjectURL(file);
@@ -45,8 +46,9 @@ export default function FileUpload() {
          backgroundColor:' #1a183fcc',
          borderRadius: image ? '100%': '.5rem',
          border: '1px dashed #72718dcc',
-      }}>
+      }} >
          <div
+         className="avatar-container"
          style={{
             background: image ? `url(${image}) center/100%` : "#1a183fcc",
                overflow: "hidden",
@@ -73,16 +75,29 @@ export default function FileUpload() {
 
          {
             image && (
-               <button onClick={() => setImage(null)}
-               style={{marginTop: "10px",
+               <div  style={{marginTop: "10px",
                   position: 'absolute',
-                  top: '5rem',
+                  top: '1rem',
                   right: '-3rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+               }}>
+                  <button onClick={() => setImage(null)}
+               style={{margin: "10px 0px",
                   width: '10rem'
                }}
                className="removeBtn"> 
                   Remove Image
                </button>
+                  <button onClick={() => document.getElementById("fileInput").click()}
+               style={{
+                  width: '10rem'
+               }}
+               className="removeBtn"> 
+                  Change Image
+               </button>
+               </div>
+               
             )
          }
       </div>

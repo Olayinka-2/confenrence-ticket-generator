@@ -46,6 +46,15 @@ main {
    position: relative;
 }
 
+.avatar-container:hover {
+   border: 1px solid #f7f3f2;
+   border-radius: 5px;
+}
+
+.input input:focus {
+   border: 1px solid #f7f3f2;
+}
+
 .input:first-of-type {
    align-items: center;
 }

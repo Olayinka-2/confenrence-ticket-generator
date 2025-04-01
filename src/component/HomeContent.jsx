@@ -36,7 +36,7 @@ export default function MainContent() {
                   <div>
                      <button className="submitBtn">
                         <Link className="Link" to="success">
-                           Submit form
+                            Generate My Ticket
                         </Link>
                      </button>
                   </div>

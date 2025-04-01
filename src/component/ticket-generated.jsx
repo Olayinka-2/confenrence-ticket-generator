@@ -40,31 +40,9 @@ export default function GenerateTicket() {
                         </div>
                      </div>
                   </div>
-                     
-               {/* <div className={styles["success-card"]}>
-                  <img src={ticket} alt="pattern-ticket" className="img"/>
-                  <div className={styles["card-info"]}>
-                     <div className={styles["address-container"]}>
-                        <div className={styles["address"]}>
-                           <img src={logo} alt="logo" />
-                           <p>Coding Conf</p>
-                        </div>
-                        <div className={styles["addressText"]}>
-                           Mar 31, 2025 / Minna, Nigeria
-                        </div>
+                     <div className={styles["hash-number"]}>
+                        #01609
                      </div>
-                     <div className={styles["address-container"]}>
-                        <div className={styles["address"]}>
-                           <img src={avatarImage} alt="profile image" />
-                           <p>Olayinka Israel</p>
-                        </div>
-                        <div className={styles["addressText"]}>
-                            https://github.com/Olayinka-2/ 
-                        </div>
-                     </div>
-                    
-                  </div>
-               </div> */}
                </div>
          </main>
       </>

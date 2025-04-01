@@ -47,7 +47,6 @@
    width: 100%;
 }
 
-
 .main-profile {
    position: absolute;
    height: 100%;
@@ -84,11 +83,34 @@
    margin-bottom: .5rem;
 }
 
-
 .address-container-last {
    display: flex;
    gap: 3rem;
    align-items: center;
+}
+
+.hash-number {
+   font-size: 2.5rem;
+   color: #8478A1;
+   font-weight: bold;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@media screen and (max-width: 1300px) {
+   .firstPara {
+      font-size: 2rem;
+   }
+
+   .addressText {
+      font-size: 1.8rem;
+   }
+
+   .main-profile {
+      gap: 6rem;
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -99,11 +121,11 @@
    }
 
    .firstPara {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
    }
 
    .addressText {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
    }
 
    .profile-image {
@@ -114,5 +136,16 @@
    .address-container-last {
       gap: 1.5rem;
    }
+
+   .hash-number {
+      font-size: 1.5rem;
+      color: #8478A1;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: rotate(90deg);
+   }
    
 }
+

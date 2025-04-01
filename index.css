@@ -48,23 +48,22 @@ header img {
    height: auto;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1750px) {
    body {
       background: 
-      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100%,
+      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100vh,
       url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
       url('./src/asset/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
       url('./src/asset/images/background-tablet.png') no-repeat center/100%;
    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
    body {
       background: 
       url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
       url('./src/asset/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
-      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100%,
+      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100vh,
       url('./src/asset/images/background-mobile.png') no-repeat center/100%;
-      max-height: 100%;
    }
 }
