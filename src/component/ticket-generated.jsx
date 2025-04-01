@@ -1,7 +1,7 @@
 import styles from "./ticket-generated.module.css";
-import ticket from "../asset/images/pattern-ticket.svg";
-import logo from "../asset/images/logo-mark.svg";
-import avatarImage from "../asset/images/image-avatar.jpg";
+import ticket from "../../public/assets/images/pattern-ticket.svg";
+import logo from "../../public/assets/images/logo-mark.svg";
+import avatarImage from "../../public/assets/images/image-avatar.jpg";
 
 export default function GenerateTicket() {
    return(

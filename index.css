@@ -11,17 +11,17 @@ html {
 
 @font-face {
    font-family: "customFont";
-   src: url('./src/asset/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
+   src: url('/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
 }
 
 body {
    min-height: 100vh;
    font-family: "customFont";
    background: 
-   url('./src/asset/images/pattern-lines.svg') no-repeat center center/100%,
-   url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
-   url('./src/asset/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
-   url('./src/asset/images/background-desktop.png') no-repeat center/100%;
+   url('/assets/images/pattern-lines.svg') no-repeat center center/100%,
+   url('/assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
+   url('/assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
+   url('/assets/images/background-desktop.png') no-repeat center/100%;
    position: relative;
    min-height: 100vh;
 }
@@ -51,19 +51,19 @@ header img {
 @media (max-width: 1750px) {
    body {
       background: 
-      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100vh,
-      url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
-      url('./src/asset/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
-      url('./src/asset/images/background-tablet.png') no-repeat center/100%;
+      url('/assets/images/pattern-lines.svg') no-repeat center center/100vh,
+      url('/assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
+      url('/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
+      url('/assets/images/background-tablet.png') no-repeat center/100%;
    }
 }
 
 @media screen and (max-width: 950px) {
    body {
       background: 
-      url('./src/asset/images/pattern-squiggly-line-top.svg') no-repeat top right,
-      url('./src/asset/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
-      url('./src/asset/images/pattern-lines.svg') no-repeat center center/100vh,
-      url('./src/asset/images/background-mobile.png') no-repeat center/100%;
+      url('/assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
+      url('/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat bottom left,
+      url('/assets/images/pattern-lines.svg') no-repeat center center/100vh,
+      url('/assets/images/background-mobile.png') no-repeat center/100%;
    }
 }

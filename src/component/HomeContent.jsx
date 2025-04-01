@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import FileUpload from "./Avatar";
 import { useState } from "react";
-import icon from "../asset/images/icon-info.svg";
+import icon from "../../public/assets/images/icon-info.svg";
 
 export default function MainContent() {
   const [errors, setErrors] = useState({
