@@ -49,6 +49,8 @@ main {
 .avatar-container:hover {
    border: 1px solid #f7f3f2;
    border-radius: 5px;
+   background-color: rgba(247, 243, 242, .25);
+   cursor: alias;
 }
 
 .input input:focus {
@@ -56,7 +58,8 @@ main {
 }
 
 .input input:hover {
-   background-color: rgba(247, 243, 242, .25);;
+   background-color: rgba(247, 243, 242, .25);
+   cursor:text;
 }
 
 .input:first-of-type {
