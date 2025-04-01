@@ -55,6 +55,10 @@ main {
    border: 1px solid #f7f3f2;
 }
 
+.input input:hover {
+   background-color: rgba(247, 243, 242, .25);;
+}
+
 .input:first-of-type {
    align-items: center;
 }
